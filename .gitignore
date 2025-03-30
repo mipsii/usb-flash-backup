@@ -3,4 +3,5 @@
 *.pyc
 .test/
 .debris/
-.local/
+.locale/
+..pytest_cache/
