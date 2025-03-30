@@ -1,8 +1,0 @@
-msgid "Hello, World!"
-msgstr ""
-
-msgid "Exit"
-msgstr ""
-
-msgid "App"
-msgstr ""

@@ -1,0 +1,6 @@
+.usbVirtual/
+.history/
+*.pyc
+.test/
+.debris/
+.local/
