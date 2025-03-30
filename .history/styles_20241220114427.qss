@@ -1,0 +1,86 @@
+/* Opšti stil za aplikaciju */
+QWidget {
+    background-color: #1e1e2e;
+    color: #e0e0e0;
+    font-size: 14px;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* Stil za QLabel */
+QLabel {
+    font-weight: bold;
+    margin: 8px;
+    font-size: 16px;
+    color: #cfcfcf;
+}
+
+/* Stil za QPushButton */
+QPushButton {
+    background-color: #5e81ac;
+    color: #ffffff;
+    border: 1px solid #4c566a;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #81a1c1;
+}
+
+QPushButton:pressed {
+    background-color: #4c566a;
+}
+
+/* Stil za QListWidget */
+QListWidget {
+    border: 1px solid #4c566a;
+    background-color: #2e3440;
+    color: #e5e9f0;
+    border-radius: 6px;
+    padding: 2px;
+    color: #ffffff; /* Svetlija bela boja za tekst */}
+
+QListWidget::item {
+    padding: 0px 10px;
+    border: none;
+    border-bottom: 1px solid #3b4252;
+}
+
+QListWidget::item:hover {
+    background-color: #434c5e;
+    color: #eceff4;
+}
+
+QListWidget::item:selected {
+    background-color: #5e81ac;
+    color: #ffffff;
+}
+
+/* Stil za QLineEdit */
+QLineEdit {
+    background-color: #2e3440;
+    color: #e5e9f0;
+    border: 1px solid #4c566a;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+/* Stil za QScrollBar */
+QScrollBar:vertical {
+    background: #2e3440;
+    width: 12px;
+    margin: 0;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: #5e81ac;
+    border-radius: 6px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background: none;
+    height: 0;
+}

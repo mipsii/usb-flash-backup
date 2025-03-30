@@ -1,0 +1,24 @@
+QTreeView {
+    alternate-background-color: #f6fafb;
+    background: #e8f4fc;
+}
+QTreeView::item:open {
+    background-color: #c5ebfb;
+    color: blue;
+}
+QTreeView::item:selected {
+    background-color: #1d3dec;
+    color: white;
+}
+QTreeView::branch {
+    background-color: white;
+}
+QTreeView::branch {
+    background-color: white;
+}
+QTreeView::branch:open {
+    image: url(branch-open.png);
+}
+QTreeView::branch:closed:has-children {
+    image: url(branch-closed.png);
+}

@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-02 21:59+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: usbVirtual/lib/python3.12/site-packages/_pytest/config/argparsing.py:474
+#, python-format
+msgid "ambiguous option: %(option)s could match %(matches)s"
+msgstr "Dvosmislen opcija: %(option)s može odgovarati %(matches)s"
+
+#: popup_backup.py:9 modern_popup_backup.py:21
+msgid "Pregled promena za backup"
+msgstr "Pregled promena za backup"
+
+#: popup_backup.py:20 modern_popup_backup.py:117
+msgid "Novi"
+msgstr "Novi"
+
+#: popup_backup.py:24 modern_popup_backup.py:121
+msgid "Obrisani"
+msgstr "Obrisani"
+
+#: popup_backup.py:27 modern_popup_backup.py:112
+msgid "Izmenjeni fajlovi:"
+msgstr "Izmenjeni fajlovi:"
+
+#: popup_backup.py:28 modern_popup_backup.py:113
+msgid "Izmenjeni"
+msgstr "Izmenjeni"
+
+#: popup_backup.py:35 modern_popup_backup.py:129
+msgid "Pokreni backup"
+msgstr "Pokreni backup"
+
+#: popup_backup.py:36 modern_popup_backup.py:128
+msgid "Otkaži"
+msgstr "Otkaži"
+
+#: modern_popup_backup.py:109
+msgid "Prilagođeni status bar"
+msgstr "Prilagođeni status bar"
+
+#: modern_popup_backup.py:116
+msgid "Novi fajlovi:"
+msgstr "Novi fajlovi:"
+
+#: modern_popup_backup.py:120
+msgid "Obrisani fajlovi:"
+msgstr "Obrisani fajlovi:"
+
+#: ui_gui.py:23 appCon.py:8
+msgid "USB Backup"
+msgstr "USB Backup"
+
+#: ui_gui.py:34
+msgid "English"
+msgstr "English"
+
+#: ui_gui.py:34
+msgid "Srpski"
+msgstr "Srpski"
+
+#: ui_gui.py:34
+msgid "Czesky"
+msgstr "Czesky"
+
+#: ui_gui.py:50 ui_gui.py:158 appCon.py:105
+msgid "USB nije umetnut"
+msgstr "USB nije umetnut"
+
+#: ui_gui.py:57
+msgid "Promeni status"
+msgstr "Promeni status"
+
+#: ui_gui.py:154 appCon.py:101
+msgid "USB: { usb['Label'] } Serijski broj: { serial_number }"
+msgstr "USB: { usb['Label'] } Serijski broj: { serial_number }"
+
+#: ui_gui.py:155 appCon.py:102
+msgid "USB je povezan na {usb['Device']}."
+msgstr "USB je povezan na {usb['Device']}."
+
+#: ui_gui.py:164 appCon.py:111 appCon.py:136
+msgid "USB nije priključen"
+msgstr "USB nije priključen"
+
+#: ui_gui.py:179
+msgid "USB: { usb['Label']} <br> (Serijski broj: {serial_number})"
+msgstr "USB: { usb['Label']} <br> (Serijski broj: {serial_number})"
+
+#: ui_gui.py:185 appCon.py:128
+msgid "Backup"
+msgstr "Backup"
+
+#: ui_gui.py:188
+msgid "USB je registrovan. <br> Spreman za backup."
+msgstr "USB je registrovan. <br> Spreman za Backup."
+
+#: ui_gui.py:193
+msgid "USB je registrovan. <br> nije aktivan."
+msgstr "USB je registrovan. <br> nije aktivan."
+
+#: ui_gui.py:195
+msgid "Registruj& mount USB"
+msgstr "Registruj & mount USB"
+
+#: ui_gui.py:197 appCon.py:134
+msgid "USB nije registrovan. Registrujte ga."
+msgstr "USB nije registrovan. Registrujte ga."
+
+#: ui_gui.py:199
+msgid "nema USB aktivnih"
+msgstr "nema USB aktivnih"
+
+#: appCon.py:123
+msgid "USB: { usb['Label']} (Serijski broj: {serial_number})"
+msgstr "USB: { usb['Label']} (Serijski broj: {serial_number})"
+
+#: appCon.py:124
+msgid "USB je povezan."
+msgstr "USB je povezan."
+
+#: appCon.py:130
+msgid "USB je registrovan. Spreman za backup."
+msgstr "USB je registrovan. Spreman za backup."
+
+#: appCon.py:132
+msgid "Registruj USB"
+msgstr "Registruj USB"
+
+

@@ -1,0 +1,19 @@
+
+POT_FILE = messages.pot
+PO_DIR = locale
+MO_FILES = $(PO_DIR)/sr/LC_MESSAGES/app.mo  $(PO_DIR)/cz/LC_MESSAGES/app.mo $(PO_DIR)/en/LC_MESSAGES/app.mo
+
+all: $(MO_FILES)
+
+$(POT_FILE):
+	# Isključujemo .debris i problematične fajlove
+	xgettext --keyword=_ --from-code=UTF-8 -o $(POT_FILE) $(shell find . -type f -iname '*.py' ! -path "*/__init__.py" ! -path "*/.debris/*")
+
+$(PO_DIR)/%/LC_MESSAGES/app.po: $(POT_FILE)
+	cp $(POT_FILE) $@
+
+$(PO_DIR)/%/LC_MESSAGES/app.mo: $(PO_DIR)/%/LC_MESSAGES/app.po
+	msgfmt $< -o $@
+
+clean:
+	rm -f $(POT_FILE) $(PO_DIR)/*/LC_MESSAGES/app.po $(MO_FILES)

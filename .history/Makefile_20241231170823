@@ -1,0 +1,29 @@
+POT_FILE = messages.pot
+PO_DIR = locale
+LANGUAGES = sr cz en
+MO_FILES = $(foreach lang, $(LANGUAGES), $(PO_DIR)/$(lang)/LC_MESSAGES/app.mo)
+
+all: $(MO_FILES)
+
+# Kreiranje .pot fajla iz svih Python fajlova u root direktorijumu
+$(POT_FILE):
+	py_files=$$(find . -maxdepth 1 -name '*.py'); \
+	if [ -n "$$py_files" ]; then \
+	  xgettext --keyword=_ --from-code=UTF-8 -o $(POT_FILE) $$py_files; \
+	else \
+	  echo "No Python files found."; \
+	fi
+
+# Kreiranje .po fajlova za svaki jezik ako ne postoje
+$(PO_DIR)/%/LC_MESSAGES/app.po: $(POT_FILE)
+	mkdir -p $(dir $@)
+	if [ ! -f $@ ]; then cp $(POT_FILE) $@; fi
+
+# Kompajliranje .po fajlova u .mo fajlove
+$(PO_DIR)/%/LC_MESSAGES/app.mo: $(PO_DIR)/%/LC_MESSAGES/app.po
+	msgfmt $< -o $@
+
+clean:
+	rm -f $(POT_FILE)
+	rm -f $(PO_DIR)/*/LC_MESSAGES/app.po
+	rm -f $(MO_FILES)
