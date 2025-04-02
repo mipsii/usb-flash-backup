@@ -2,7 +2,7 @@ import gettext
 import os
 from PySide6.QtWidgets import QLabel, QPushButton, QComboBox
 
-from signal_manager import SignalManager
+from src.signals.signal_manager import SignalManager
 
 class TranslationManager:
     _instance = None 

@@ -2,12 +2,12 @@ import asyncio
 import gettext
 from PySide6.QtWidgets import QMainWindow, QApplication
 import pyudev
-from file_change import FileChangeManager
-from file_collector import FileCollector
-from signal_manager import SignalManager
-from ui_gui import UiGui
-from ui_logic import UiLogic
-from file_explorer_view import MmainWindow
+from src.utils.file_change import FileChangeManager
+from src.utils.file_collector import FileCollector
+from src.signals.signal_manager import SignalManager
+from src.gui.ui_gui import UiGui
+from src.gui.ui_logic import UiLogic
+from src.gui.file_explorer_view import MmainWindow
 
 class MainWindow(QMainWindow):
    
@@ -24,8 +24,7 @@ class MainWindow(QMainWindow):
         #self.check_connected_usb_devices()
         print("u main u je ")
         self._signals()
-        
-        
+             
     def _signals(self):
         self.signal_manager = SignalManager() 
         self.signal_manager.connect_signal("sigHistoryChanged", self, "on_history_changed")
@@ -176,9 +175,7 @@ class MainWindow(QMainWindow):
     #     """Sakrij prozor sa task bara kada se klikne X."""
     #     event.ignore()
     #     self.hide()
-        
-    # Ovde možete dodati dodatne funkcionalnosti, poput prikazivanja notifikacije u tray-u
-   
+           
 # Pokretanje aplikacije
 if __name__ == "__main__":
     app = QApplication([])

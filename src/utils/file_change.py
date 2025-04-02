@@ -1,10 +1,10 @@
 import asyncio
 import json
 import os
-from file_collector import FileCollector
-from modern_popup_backup import ModernBackupPopup
-from signal_manager import SignalManager
-from usb_backup_manager import USBBackupManager
+from src.utils.file_collector import FileCollector
+from src.gui.modern_popup_backup import ModernBackupPopup
+from src.signals.signal_manager import SignalManager
+from src.utils.usb_backup_manager import USBBackupManager
 from PySide6.QtCore import QObject, QTimer
 
 from PySide6.QtWidgets import QDialog

@@ -7,8 +7,8 @@ from PySide6.QtWidgets import (
 from PySide6.QtCore import Qt, Signal, QThread
 from PySide6 import QtCore
 import sys
-from localization import _
-from translation import TranslationManager 
+from translaters.localization import _
+from translaters.translation import TranslationManager 
 
 class ModernBackupPopup(QDialog):
     

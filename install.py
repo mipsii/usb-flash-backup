@@ -1,4 +1,4 @@
-from backup_dialog import BackupDialog
+from src.gui.backup_dialog import BackupDialog
 from config import ConfigManager
 
 if __name__ == "__main__":

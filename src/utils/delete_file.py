@@ -1,8 +1,8 @@
 import os
 import json
 from usb_class import UsbClassManager
-from usb_serial import USBSerialManager
-from json_file import load_json_data, save_json_data
+from utils.usb_serial import USBSerialManager
+from utils.json_file import load_json_data, save_json_data
 
 class BackupFolderManager:
     

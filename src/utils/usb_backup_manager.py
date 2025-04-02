@@ -3,7 +3,7 @@ from datetime import datetime
 import json
 import os
 import shutil
-from localization import _
+from translaters.localization import _
 
 class USBBackupManager:
     def __init__(self, file_change_manager):

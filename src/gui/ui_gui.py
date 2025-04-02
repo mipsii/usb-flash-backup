@@ -1,12 +1,17 @@
+import os
 from PySide6.QtWidgets import QWidget, QComboBox, QVBoxLayout, QLabel, QPushButton, QListWidget, QSplitter
 from PySide6.QtCore import Qt
 
-from signal_manager import SignalManager
-from localization import _
-from translation import TranslationManager
+from src.signals.signal_manager import SignalManager
+from translaters.localization import _
+from translaters.translation import TranslationManager
 
 class UiGui:
-    
+     # Pronalazi direktorijum gde se nalazi ovaj fajl (ui_gui.py)
+    ui_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Formira ispravnu putanju do styles.qss
+    style_path = os.path.join(ui_dir, "styles.qss")
     def __init__(self, main_windows):
         """Inicijalizuje GUI sa referencom na logičku klasu."""
         self.main_windows = main_windows  # Spremamo referencu na logičku klasu
@@ -21,6 +26,11 @@ class UiGui:
        
     """Klasa koja definiše korisnički interfejs."""
     def setupUi(self, MainWindow):
+        ui_dir = os.path.dirname(os.path.abspath(__file__))
+
+        # Formira ispravnu putanju do styles.qss
+        style_path = os.path.join(ui_dir, "styles.qss")
+        
         self.MainWindow = MainWindow  # Sačuvaj referencu na MainWindow
         #MainWindow.setWindowTitle(_("USB Backup"))
         self.translation_manager.add_widget(MainWindow, _("USB Backup"))
@@ -100,7 +110,7 @@ class UiGui:
         self.set_button_state("Promeni status", False)
 
         try:
-            with open("styles.qss", "r") as f:
+            with open(style_path, "r") as f:
                 style = f.read()
                 print("Stil uspešno učitan!")
         except FileNotFoundError:

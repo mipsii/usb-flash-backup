@@ -7,13 +7,13 @@ from PySide6.QtWidgets  import QApplication
 
 from qasync import QEventLoop
 
-from json_file import JsonFileManager
-from usb_backup_manager import USBBackupManager
-from usb_info import UsbInfoManager
+from utils.json_file import JsonFileManager
+from utils.usb_backup_manager import USBBackupManager
+from utils.usb_info import UsbInfoManager
 from main import MainWindow
-from usb_device import USBDeviceManager
-from usb_folder import USBFolderManager
-from usb_listener import UsbListener
+from utils.usb_device import USBDeviceManager
+from utils.usb_folder import USBFolderManager
+from utils.usb_listener import UsbListener
 
 class UsbClassManager:
     

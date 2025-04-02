@@ -2,7 +2,7 @@ import json
 import os
 import platform
 import subprocess
-from json_file import save_json_data
+from utils.json_file import save_json_data
 
 class USBSerialManager:
     def __init__(self, usb_info):

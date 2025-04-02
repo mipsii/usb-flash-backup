@@ -3,7 +3,7 @@ import json
 import os
 from PySide6.QtCore import QObject
 
-from signal_manager import SignalManager
+from src.signals.signal_manager import SignalManager
 
 class FileCollector(QObject):
 

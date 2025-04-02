@@ -4,8 +4,8 @@ from datetime import datetime
 from PySide6.QtCore import  QObject
 from PySide6.QtGui import  Qt
 from PySide6.QtWidgets import QListWidgetItem, QApplication, QMainWindow
-from signal_manager import SignalManager
-from usb_list import USBListManager
+from src.signals.signal_manager import SignalManager
+from src.utils.usb_list import USBListManager
 
 class UiLogic(QObject):
  

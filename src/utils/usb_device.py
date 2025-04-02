@@ -1,7 +1,7 @@
 import os
 import platform
-from usb_manager_linux import USBManagerLinux
-from usb_manager_windows import USBManagerWindows
+from utils.usb_manager_linux import USBManagerLinux
+from utils.usb_manager_windows import USBManagerWindows
 
 class USBDeviceManager:
     def __init__(self, usb_class):
